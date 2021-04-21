@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="js/banner.js"></script>
+<style>
+
+.header{height:70px;}
+    .slogan{
+    text-align: left;
+    padding-left: 613px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font: bold 98px 'Arial';
+    color: #18a258;
+    line-height: 113px;
+    display: block;
+text-align: center;}
+    span{
+        font: 24px 'Arial';
+    color: #2b2a29;
+    line-height: 27px;
+    }
+    h4,h3,h2,h1{
+        text-align: center;
+    }
+    div{text-align: center;}
+    .offerTitle{
+        font: bold 29px 'Arial';
+    color: #2b2a29;
+    line-height: 34px;
+    }
+    .boxes{
+    width: 24em;
+    padding: .5em;
+text-align: justify;
+background-color: #D9EBDD;
+margin: .5em;
+
+    }
+    .boxes:hover{
+        background-color: #2b2a29 .1s;
+        transform:scale(1.05);
+        transition: all 400ms ease;
+        box-shadow:0 2px 5px 0px;
+    }
+    .boxLogo{
+        height: 15em;
+        background-color: #18a258;
+        box-shadow: 0 1px 2px 1px black;
+display: flex;
+        }
+    .boxLogo span{
+        color: aliceblue;
+        margin-bottom: 0px;
+        align-self: flex-end;
+    padding-bottom: 10px;
+    }
+    .footer{
+        width:100%;
+        display:flex;
+        background-color: #D9EBDD;
+    }
+    h4{    font: bold 20px 'Arial';
+    color: #2b2a29;
+    line-height: 19px;
+    margin:10px;}
+    .inputButton{
+    font: bold 21px 'Arial';
+    background-color: #18a258;
+    border-style: solid;
+    border-color: #2b2a29;
+    color: #fefefe;
+    line-height: 24px;
+    margin-top: 15px;
+    padding: 7px 15px;
+}
+.inputButton:hover{background-color: #1a834b;}
+form{margin-top: 15px;}
+ .inputLabel{
+    font: 24px 'Arial';
+    color: #2b2a29;
+    line-height: 27px;
+ }   
+ .section{padding:25px;}
+ .sectionA{background-color:#D9EBDD;padding:20px;}
+ .footBox a,.footBox span{
+    font: 16px 'Arial';
+    text-decoration: none;
+    color: #2b2a29;
+    line-height: 30px;
+     }
+     .footBox{text-align:left ;
+     
+     padding: 30px;
+     width: 100%;}
+     .banner{background:url("img/home/g1.png")}
+     .header li, .contact a{font: bold 14px 'Arial';
+    color: #2b2a29;
+    line-height: 16px;
+    list-style:none;
+    display: block;
+position: relative;
+margin:10px;}
+    .header a{text-decoration: none;
+    margin-right:30px;}
+    .contact{
+        background:url("img/home/g1.jpg");   
+         background-position: center;
+    padding: 50px;
+    background-size: cover;
+        }
+    .contact a{    
+        text-decoration:none;
+        margin-right: 20px;
+    display: inline;}
+    .offer{background-color: #D9EBDDdd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+    padding: 20px;}
+.contact span{line-height: 50px;}
+.wideBox{display: flex;}
+.psmall{font: 13px 'Arial';
+    color: #2b2a29;
+    line-height: 20px;}
+    p{    font: 16px 'Arial';
+    color: #2b2a29;
+    line-height: 18px;}
+    .sliderRight{float:right;}
+    .sliderLeft{float:left;}
+    table{width: 100%;}
+    .text30l img{height:100px;}
+    .titleLine{border-bottom: black 2px solid;}
+
+    .floatClear {
+  clear: both;
+}
+#wrapper {
+  text-align: right;
+  position: relative;
+  margin: 10px;
+}
+#wrapper .line {
+  border-bottom: 5px solid #06745e;
+  position: absolute;
+  width: 100%;
+  top: 15px;
+}
+#wrapper .textbox {
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+#wrapper .textbox .text {
+  background-color: #D9EBDD;
+  margin: 0px auto;
+  padding: 0px 10px;
+  text-align: right;
+  display: inline;
+  font: bold 34px 'Arial';
+    color: #06745e;
+    line-height: 40px;
+}
+
+
+.BannerSlides {
+    display:none;
+}
+.slider{position:relative;}
+
+.linkElement, .sliderLeft, .sliderRight {
+    cursor: pointer;
+}
+.w3-transparent, .w3-hover-none:hover {
+    background-color: transparent!important;
+}
+.text30l{width:29%;}
+.text70r{width:69%;}
+.sliderRight p{text-align:justify;}
+.slogan2{display:flex;margin:20px;}
+.showbox{display:block;}
+.freequote img{    margin: 36px;
+    width: 45%;}    
+.header{border: none;
+    padding: 5px;
+    border: none;
+    width: 100%;}
+.nav{display:flex;}
+.navMenu{position: relative;float:right;
+z-index: 2;}
+.header img{float:left;}
+.nav li ul li:hover {background:#18A159;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+.nav ul {
+left: -43px;
+position:absolute;
+padding:0;border: black 1px solid;
+background:#fff;
+display:none; /* hides sublists */
+}
+.nav a{color:#18A159;}
+.nav a:hover{color:#009846;}
+.nav li:hover .nav li ul {display:none;} /* hides sub-sublists */
+.nav li:hover ul {display:block;} /* shows sublist on hover */
+.nav li li:hover ul {
+display:block; 
+/* shows sub-sublist on hover */
+top: 33px;
+left: 10px;/* aligns top of sub menu with top of list item */
+}
+.nav li ul li{margin: 0; width:150px;
+padding: 5px;border:black 1px solid;}
+.nav li{ padding:10px; color:#000;}
+
+
+.serviceList{display:flex;}
+.serviceBox{width:300px;padding:10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);margin: 25px auto;}
+.serviceBox:hover{       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75); transform:translate(0px, -20px);
+        transition: all 400ms ease;}
+.serviceBox img{width: 285px;}
+.serviceBox{padding:15px;}
+.serviceBox .shortDescription{text-align: justify;}
+.serviceBox .longDescription{display:none;}
+.serviceBox:click{    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 75em;
+}
+.nav li ul li a{color:#000;margin:auto;}
+.nav li ul li a:hover{color:#fff;}
+.nav ul{top: 33px;
+border-radius: 5px;top: 33px;
+border-radius: 5px;}
+</style>
+
+
+<body>
+    <div class="header">
+        <img src="img/logo.webp" alt="">
+        <div class="navMenu">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a>
+            	<ul>
+            <li><a href="disinfection.html">Disinfection</a></li>
+            <li><a href="pest.html">Pest Control</a></li>
+            <li><a href="carwash.html">Car Wash</a>
+            <li><a href="seervices.html">More Services..</a></li></ul></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="section sectionA">
+    <h1>ONE CALL CLEANS IT ALL</h1>
+    <p><b>Quantk Klean</b> is professional Zimbabwe maids, residential and commercial office cleaning services serving Harare and major cities. We provide best home and office cleaning. Our team is proud to orer you a wide range of reliable solutions and incomparable quality all at a ordable prices.</p>
+    <p>As a dedicated cleaning business with a sharper focus on our customers' unique needs.</p>
+    <p><b>WE AIM TO DELIVER EXEMPLARY QUALITY !</b></p>
+    </div>
+    <div class="section sectionB">
+    <h2>Our Services</h2>
+    <div class="serviceList">
+     	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/1.jpg" alt="">
+  		<h4>Residential House Cleaning</h4>
+  		<p class="shortDescription">Best Residential House Cleaning Company, We will work with you to establish a Residential House cleaning and sanitization program that works best for you and your environment. Trust us for your cleaning needs.</p>
+  		<p class="longDescription"> Best Residential House Cleaning Company, We will work with you to establish a Residential House cleaning and sanitization program that works best for you and your environment. Trust us for your cleaning needs.<br>The  Quantik Klean provides high quality service to ensure your home is cleaned and maintained to the highest standards. We work around your schedule. We can come to clean each week, biweekly or even daily or every other day at times to suit you. Our house cleaning service is flexible and affordable. We have experience and provide personalized service to facilitate your life on a day to day basis. Our staff is highly trained, bonded and fully insured. At Harare and major cities protecting the environment is of paramount importance to us. That's why we use organic, eco-friendly efficient cleaning solutions. We are happy to make your home spotless in no time.<br>Residential cleaning checklists take into consideration the size of your home, condo or apartment, your choice of basic or deep cleaning services, and anything else which you would like us to pay particular attention to.</p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/2.jpg" alt="">
+  		<h4>Commercial Office Cleaning</h4>
+  		<p class="shortDescription">Your office will need to be looking especially inviting. Potential clients who visit a clean office leave with a favorable impression of the place. A clean and tidy office increases the employees productivity and help them concentrate on their work.</p></p>
+  		<p class="longDescription">Your office will need to be looking especially inviting. Potential clients who visit a clean office leave with a favorable impression of the place. A clean and tidy office increases the employees productivity and help them concentrate on their work.<br>Quantik Klean team will clean your office in a sustainable way .By using green cleaning solutions, your employees do not have to worry about inhaling harmful chemicals or touching surfaces.<br>As office cleaning requirements vary from client to client, we provide bespoke commercial cleaning solutions, tailored to the needs of each individual business.<br>We service Harare and major cities where we specialize in out-of-hours office cleaning. We also pride ourselves on the vetting and training of our cleaners and we appreciate how important this is to our customers.</p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/3.jpg" alt="">
+  		<h4>After Builders Cleaning</h4>
+  		<p class="shortDescription">After a project has been completed, there is generally a great deal of the site cleaning. The building needs to be ready for the opening. It has to look especially sparkling and inviting. Do not miss the first impression!</p>
+  		<p class="longDescription">After a project has been completed, there is generally a great deal of the site cleaning. The building needs to be ready for the opening. It has to look especially sparkling and inviting. Do not miss the first impression!<br>We are fully equipped to provide you with high quality service. We can provide you after building work cleaning in the morning, afternoon, evening or the night.<br>Our maids work to a pre-agreed list or use own judgement. On all sites, Quantik Klean view health and safety in the up most importance. We have years of experience and we offer our services at reasonable prices.<br>Our clients are 100% satisfied with the results and quality.<br>After Builders Cleaning (Post Construction)  – Residential and Commercial<br>Renovation and decorating like flooring, painting or regular repairs always causes a lot dust and debris. Quantik Klean is the leading cleaning company which provides you best after builders cleaning services at low rates in Harare GTA.</p>
+  	</div>
+  	</div></div>
+  	<div class="serviceList">
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/4.jpg" alt="">
+  		<h4>Auto Dealership Cleaning</h4>
+  		<p class="shortDescription">We will work with you to establish a Car Dealership cleaning and sanitization program that works best for you and your environment. Trust us for your cleaning needs. Feel free to contact us for a free quote.</p>
+  		<p class="longDescription">We will work with you to establish a Car Dealership cleaning and sanitization program that works best for you and your environment. Trust us for your cleaning needs. Feel free to contact us for a free quote.<br>Car Dealership Cleaning Services<br>Car Dealerships Maintenance Services in Harare and Major Cities<br>Car Dealership Cleaning Services <br>We are conscious of the need to promote and deliver a first positive impression to your potential clients. That’s why we have a professional and specially trained team that is aware of this importance, the need to provide high quality Car Dealership cleaning services so as to share and be part of your company’s overall reputation and success.<br>For over 10 years Quantik Klean has been providing high quality Car Dealership Cleaning Services in Zimbabwe major cities. Regular quality control, highly trained and motivated cleaners as well as excellent customer service Quantik Klean at the top of the Commercial Facilities industry in Zimbabwe.</p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/5.jpg" alt="">
+  		<h4>Airbnb Cleaning</h4>
+  		<p class="shortDescription">Airbnb Cleaning & Turnover Service in Harare. Vacation Rental Cleaning Service. Harare is one of the most visited places in the country. There’s no better experience that arriving to a clean and tidy Airbnb. Your guests will have the opportunity to rate the cleanliness of your home and their review will impact your overall rating. In order to provide the best guest experience, let Quantik Klean do the job for you. We ensure you will find a vibrant and fresh smelling space. </p>
+  		<p class="longDescription">Airbnb Cleaning & Turnover Service in Harare. Vacation Rental Cleaning Service. Harare is one of the most visited places in the country. There’s no better experience that arriving to a clean and tidy Airbnb. Your guests will have the opportunity to rate the cleanliness of your home and their review will impact your overall rating. In order to provide the best guest experience, let Quantik Klean do the job for you. We ensure you will find a vibrant and fresh smelling space. <br>We have been servicing Harare Gretaer Area for over 10 years now. Our local housekeeper and Quantik Klean maid in Harare Greater Area is ready to provide you with impeccable and comprehensive maid services. We have strict eligibility and reliability standards for homekeepers in our Airbnb cleaning services.<br>What's included in a Airbnb Cleaning Services<br>It is important to find the best level of Airbnb cleaning service at a price that keeps things affordable. Quantik Klean offers reliable and trusted local Airbnb cleaners and maid to help you keep your rental space successful and clean.</p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/6.jpg" alt="">
+  		<h4>Moving Cleaning</h4>
+  		<p class="shortDescription"> With more than 10 years of experience in the Moving Cleaning Services, we are now a reference in the industry. Quantik Klean is your best choice when it comes to Moving Cleaning Services in Harare and the surrounding regions.  Professional Maid Service, Bonded and Insured Staff - House Moving Cleaning Services.</p>
+  		<p class="longDescription"> With more than 10 years of experience in the Moving Cleaning Services, we are now a reference in the industry. Quantik Klean is your best choice when it comes to Moving Cleaning Services in Harare and the surrounding regions.  Professional Maid Service, Bonded and Insured Staff - House Moving Cleaning Services.<br>We provide the Best Moving House Cleaning Service in Harare GTA<br>Moving in or moving out of your home, apartment or condo can be a very stressful experience. At Quantik Klean we are aware of this fact. That’s why we offer you stress-free moving out or moving in cleaning services.<br>Our Moving in or moving out cleanings are extremely thorough, designed to prepare a house for a new tenant. Houses can gather years of dust and grime left by previous tenants. From top to bottom, we’ll clean and sanitize everywhere, and give you a stress-free welcome to your new home.</p>
+  	</div>
+  	</div></div>
+  	<div class="serviceList">
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/7.jpg" alt="">
+  		<h4>Medical Centre Cleaning</h4>
+  		<p class="shortDescription">To protect patients and staff, health care centres need not just janitorial services. They need uncompromising partners in infection control.</p>
+  		<p class="longDescription">To protect patients and staff, health care centres need not just janitorial services. They need uncompromising partners in infection control.</p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/8.jpg" alt="">
+  		<h4>Schools and Daycare Cleaning</h4>
+  		<p class="shortDescription"> Educational facilities, with their high infection rates and young children, need specialized cleaning and regular disinfection. </p>
+  		<p class="longDescription"> Educational facilities, with their high infection rates and young children, need specialized cleaning and regular disinfection. </p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/9.jpg" alt="">
+  		<h4>Groceries Stores Cleaning</h4>
+  		<p class="shortDescription">In the competitive grocery business, customer experience and food hygiene are the essentials of janitorial service.</p>
+  		<p class="longDescription">In the competitive grocery business, customer experience and food hygiene are the essentials of janitorial service.</p>
+  	</div>
+  	</div></div>
+  	<div class="serviceList">
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/10.jpg" alt="">
+  		<h4>Retail Cleaning</h4>
+  		<p class="shortDescription">In the retail industry, brand, image and customer experience rule, making a clean, orderly store essential to success. </p>
+  		<p class="longDescription">In the retail industry, brand, image and customer experience rule, making a clean, orderly store essential to success. </p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/11.jpg" alt="">
+  		<h4>Restaurants Cleaning</h4>
+  		<p class="shortDescription">In a sector where reputational risks can threaten a business, cleanliness and hygiene are imperative. </p>
+  		<p class="longDescription">In a sector where reputational risks can threaten a business, cleanliness and hygiene are imperative. </p>
+  	</div></div>
+  	    	<div class="serviceBox">
+     		<div class="col50l">
+    		<img src="img/service/12.jpg" alt="">
+    		</div>
+    		<div class="col504">
+  		<h4>Events and Entertainment Cleaning</h4>
+  		<p class="shortDescription">In the high-stress, low-margin-for-error world of event planning, you need cleaning services you can depend on. </p>
+  		<p class="longDescription">In the high-stress, low-margin-for-error world of event planning, you need cleaning services you can depend on. </p>
+  	</div>
+  	</div>
+  	</div>
+    </div>
+<div>
+    <div class="sectionA freequote"><img src="img/home/g2.png" alt=""></div>
+</div>
+</div>
+<div class="section contact">
+    <h3>CONTACT US</h3>
+    <br>
+    <span>Copyright 2013 - 2021 &copyright Quantik Klean - All Rights Reserved.</span>
+    <br><br>
+              <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="disinfection.html">Disinfection</a>
+            <a href="pest.html">Pest Control</a>
+            <a href="carwash.html">Car Wash</a>
+            <a href="faq.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+    <br>
+    <p>A member of ALTITUDE GROUPE PVT LTD.</p>
+</div>
+
+<div class="section footer">
+    <div class="footBox">
+        <a href=""><b>Help Centre</b></a><br>
+        <a href="">Privacy Policy</a><br>
+        <a href="">FAQs</a><br>
+        <a href="">Rules & Regulations</a><br>
+        <a href="">Terms & Conditions</a><br>
+        <a href="">Emergency Number</a>
+    </div>
+    <div class="footBox">
+        <div>
+            <h4>About Us</h4>
+            <p>Zimbabwe based cleaning services.</p>
+        </div>
+        <br>
+        <div>
+            <h4>Contact Us</h4>
+            <a href="">+263 7******0</a><br>
+            <a href="">+263 7******0</a>
+        </div>
+    </div>
+    <div class="footBox">
+        <div>
+            <h4>Locate Us</h4>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <br>
+        <div>
+            <h4>Follow Us On:</h4>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

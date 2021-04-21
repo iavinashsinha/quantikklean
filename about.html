@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="js/banner.js"></script>
+<style>
+
+
+    .slogan{
+    text-align: left;
+    padding-left: 613px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font: bold 98px 'Arial';
+    color: #18a258;
+    line-height: 113px;
+    display: block;
+text-align: center;}
+    span{
+        font: 24px 'Arial';
+    color: #2b2a29;
+    line-height: 27px;
+    }
+    h4,h3,h2,h1{
+        text-align: center;
+    }
+    div{text-align: center;}
+    .offerTitle{
+        font: bold 29px 'Arial';
+    color: #2b2a29;
+    line-height: 34px;
+    }
+    .boxes{
+    width: 24em;
+    padding: .5em;
+text-align: justify;
+background-color: #D9EBDD;
+margin: .5em;
+
+    }
+    .boxes:hover{
+        background-color: #2b2a29 .1s;
+        transform:scale(1.05);
+        transition: all 400ms ease;
+        box-shadow:0 2px 5px 0px;
+    }
+    .boxLogo{
+        height: 15em;
+        background-color: #18a258;
+        box-shadow: 0 1px 2px 1px black;
+display: flex;
+        }
+    .boxLogo span{
+        color: aliceblue;
+        margin-bottom: 0px;
+        align-self: flex-end;
+    padding-bottom: 10px;
+    }
+    .footer{
+        width:100%;
+        display:flex;
+        background-color: #D9EBDD;
+    }
+    h4{    font: bold 20px 'Arial';
+    color: #2b2a29;
+    line-height: 19px;
+    margin:10px;}
+    .inputButton{
+    font: bold 21px 'Arial';
+    background-color: #18a258;
+    border-style: solid;
+    border-color: #2b2a29;
+    color: #fefefe;
+    line-height: 24px;
+    margin-top: 15px;
+    padding: 7px 15px;
+}
+.inputButton:hover{background-color: #1a834b;}
+form{margin-top: 15px;}
+ .inputLabel{
+    font: 24px 'Arial';
+    color: #2b2a29;
+    line-height: 27px;
+ }   
+ .section{padding:25px;}
+ .sectionA{background-color:#D9EBDD;padding:20px;}
+ .footBox a,.footBox span{
+    font: 16px 'Arial';
+    text-decoration: none;
+    color: #2b2a29;
+    line-height: 30px;
+     }
+     .footBox{text-align:left ;
+     
+     padding: 30px;
+     width: 100%;}
+     .banner{background:url("img/home/g1.png")}
+     .header li, .contact a{font: bold 14px 'Arial';
+    color: #2b2a29;
+    line-height: 16px;
+    list-style:none;
+    display: block;
+position: relative;
+margin:10px;}
+    .header a{text-decoration: none;
+    margin-right:30px;}
+    .contact{
+        background:url("img/home/g1.jpg");   
+         background-position: center;
+    padding: 50px;
+    background-size: cover;
+        }
+    .contact a{    
+        text-decoration:none;
+        margin-right: 20px;
+    display: inline;}
+    .offer{background-color: #D9EBDDdd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+    padding: 20px;}
+.contact span{line-height: 50px;}
+.wideBox{display: flex;}
+.psmall{font: 13px 'Arial';
+    color: #2b2a29;
+    line-height: 20px;}
+    p{    font: 16px 'Arial';
+    color: #2b2a29;
+    line-height: 18px;}
+    .sliderRight{float:right;}
+    .sliderLeft{float:left;}
+    table{width: 100%;}
+    .text30l img{height:100px;}
+    .titleLine{border-bottom: black 2px solid;}
+
+    .floatClear {
+  clear: both;
+}
+#wrapper {
+  text-align: right;
+  position: relative;
+  margin: 10px;
+}
+#wrapper .line {
+  border-bottom: 5px solid #06745e;
+  position: absolute;
+  width: 100%;
+  top: 15px;
+}
+#wrapper .textbox {
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+#wrapper .textbox .text {
+  background-color: #D9EBDD;
+  margin: 0px auto;
+  padding: 0px 10px;
+  text-align: right;
+  display: inline;
+  font: bold 34px 'Arial';
+    color: #06745e;
+    line-height: 40px;
+}
+
+
+.BannerSlides {
+    display:none;
+}
+.slider{position:relative;}
+
+.linkElement, .sliderLeft, .sliderRight {
+    cursor: pointer;
+}
+.w3-transparent, .w3-hover-none:hover {
+    background-color: transparent!important;
+}
+.text30l{width:29%;}
+.text70r{width:69%;}
+.sliderRight p{text-align:justify;}
+.slogan2{display:flex;margin:20px;}
+.showbox{display:block;}
+.freequote img{    margin: 36px;
+    width: 45%;}    
+.header{border: none;
+    padding: 5px;
+    border: none;
+    width: 100%;}
+.nav{display:flex;}
+.navMenu{position: relative;float:right;
+z-index: 2;}
+.header img{float:left;}
+.nav li ul li:hover {background:#18A159;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+.nav ul {
+left: -43px;
+position:absolute;
+padding:0;border: black 1px solid;
+background:#fff;
+display:none; /* hides sublists */
+}
+.nav a{color:#18A159;}
+.nav a:hover{color:#009846;}
+.nav li:hover .nav li ul {display:none;} /* hides sub-sublists */
+.nav li:hover ul {display:block;} /* shows sublist on hover */
+.nav li li:hover ul {
+display:block; 
+/* shows sub-sublist on hover */
+top: 33px;
+left: 10px;/* aligns top of sub menu with top of list item */
+}
+.nav li ul li{margin: 0; width:150px;
+padding: 5px;border:black 1px solid;}
+.nav li{ padding:10px; color:#000;}
+.nav li ul li a{color:#000;margin:auto;}
+.nav li ul li a:hover{color:#fff;}
+.nav ul{top: 33px;
+border-radius: 5px;top: 33px;
+border-radius: 5px;}
+
+h1{font-size: 41px;
+font-family: sans-serif;}
+.col2{width:50%;}
+.col2 img{width:80%;padding:15px;}
+.sectionB{display:flex;}
+ul li{font-size: 20.4207px;
+font-family: sans-serif;text-align:left;line-height:32px;}
+h2{font-size: 40.6212px;
+font-family: sans-serif;}
+section h1,section h2,section h3,section h4,section h5,section h6,section b{color:#009846;}
+p{font-size: 23.338px;line-height:revert;
+font-family: sans-serif;}
+section h3{font-size: 23.338px;
+font-family: sans-serif;text-align:left;margin:35px;margin-bottom:10px;}
+.header{height:70px;}
+.sectionA{padding:50px;}
+#whyChoose{padding-left: 262px;
+background: url("img/about/1.png");
+    background-repeat: repeat;
+background-size: contain;
+background-repeat: no-repeat;
+background-color: #D9EBDD;}
+</style>
+
+
+<body>
+    <div class="header">
+        <img src="img/logo.webp" alt="">
+        <div class="navMenu">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a>
+            	<ul>
+            <li><a href="disinfection.html">Disinfection</a></li>
+            <li><a href="pest.html">Pest Control</a></li>
+            <li><a href="carwash.html">Car Wash</a>
+            <li><a href="seervices.html">More Services..</a></li></ul></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="section sectionA">
+    <div>
+    <h1>KNOW ABOUT US</h1>
+    <p><b>Quantik Klean</b>  is professional Zimbabwe maids, residential and commercial once cleaning services serving Harare and major cities. We provide best home and once cleaning. Our team is proud to ofer you a wide range of reliable solutions and incomparable quality all at a ordable prices.</p>
+    <p>As a dedicated cleaning business with a sharper focus on our customers' unique needs,</p>
+    <p><b>WE AIM TO DELIVER EXEMPLARY QUALITY !</b></p>
+    </div></div>
+    <div class="section sectionB">
+    <div class="col2">
+    <h2>WHY CHOOSE US?</h2>
+    <ul>
+    	<li>Because we listen to you first
+ 	<li>We have experience with the type of cleaning duties that you need
+ 	<li>We have a good reputaion.
+ 	<li>Free estimate, without obligation on your part.
+ 	<li>We use eco-friendly and Biodegradable products. You will have abuilding that looks and feels great.
+ 	<li>Very affordable prices.
+ 	<li>Our prices are competitive allowing us to pay for good quality staff, materials, supervision and management.
+ </ul>
+ <h3>METICULOUS QUALITY CONTROL</h3>
+ <p><ul>
+ 	<li>We use custom built commercial grade HEPA Filter Vacuums.
+ 	<li>Bonded and Insured cleaning team.
+ 	<li>Personalized cleaning services.
+ 	<li>We have excellent customer reviews.
+ 	<li>Always more satisfied customers.
+ </ul></p>
+ </div>
+ <div class="col2">
+ <img src="img/about/2.png">
+ <div>
+ <p>For High Quality Service, We suggest that we come to your house or office to inspect and evaluate the area that requires cleaning. This will be done at absolutely no cost.
+ </div>
+ </div>
+    </div>
+    <div id="whyChoose" class="section sectionA">
+    <h2>Why choose our company for your residential and commercial office cleaning services?</h2>
+    <p>The prime factor which makes the company more prominent in comparison to others is their maximum and qualitative services.</p>
+    <p>The primary mission and vision of <b>Quantik Klean</b> is to provide the customers with the best and maximum quality of cleaning facilities and services. The assistance of the company is always on-time with strong commitment without delay and any lame excuses. The sta­ is extremely reliable and friendly to communicate, along with the splendid cleaning jobs they perform.</p>
+    </div>
+<div>
+    <div class="freequote"><img src="img/home/g2.png" alt=""></div>
+</div>
+</div>
+<div class="section contact">
+    <h3>CONTACT US</h3>
+    <br>
+    <span>Copyright 2013 - 2021 &copyright Quantik Klean - All Rights Reserved.</span>
+    <br>
+<br>
+              <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="disinfection.html">Disinfection</a>
+            <a href="pest.html">Pest Control</a>
+            <a href="carwash.html">Car Wash</a>
+            <a href="faq.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+    <br>
+    <p>A member of ALTITUDE GROUPE PVT LTD.</p>
+</div>
+
+<div class="section footer">
+    <div class="footBox">
+        <a href=""><b>Help Centre</b></a><br>
+        <a href="">Privacy Policy</a><br>
+        <a href="">FAQs</a><br>
+        <a href="">Rules & Regulations</a><br>
+        <a href="">Terms & Conditions</a><br>
+        <a href="">Emergency Number</a>
+    </div>
+    <div class="footBox">
+        <div>
+            <h4>About Us</h4>
+            <p>Zimbabwe based cleaning services.</p>
+        </div>
+        <br>
+        <div>
+            <h4>Contact Us</h4>
+            <a href="">+263 7******0</a><br>
+            <a href="">+263 7******0</a>
+        </div>
+    </div>
+    <div class="footBox">
+        <div>
+            <h4>Locate Us</h4>
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <br>
+        <div>
+            <h4>Follow Us On:</h4>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
