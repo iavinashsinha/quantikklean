@@ -15,22 +15,22 @@
     padding-left: 613px;
     margin-top: 0px;
     margin-bottom: 0px;
-    font: bold 98px 'Arial';
+    font: bold 98px 'Helvetica';
     color: #18a258;
     line-height: 113px;
     display: block;
 text-align: center;}
     span{
-        font: 24px 'Arial';
+        font: 24px 'Helvetica';
     color: #2b2a29;
     line-height: 27px;
     }
     h4,h3,h2,h1{
-        text-align: center;
+        text-align: center;font: bold 'Kozuka Gothic Pro H';
     }
     div{text-align: center;}
     .offerTitle{
-        font: bold 29px 'Arial';
+        font: bold 29px 'Helvetica';
     color: #2b2a29;
     line-height: 34px;
     }
@@ -54,23 +54,31 @@ margin: .5em;
         box-shadow: 0 1px 2px 1px black;
 display: flex;
         }
+        #logo1{background:url("img/home/5.jpg"); background-size:cover;}
+        #logo3{background:url("img/home/4.png"); background-size:cover;}
+        #logo2{background:url("img/home/8.jpg"); background-size:cover;}
+        #logo4{background:url("img/home/6.jpg"); background-size:cover;}
     .boxLogo span{
         color: aliceblue;
         margin-bottom: 0px;
         align-self: flex-end;
-    padding-bottom: 10px;
+background: #3a3d;
+box-shadow: inset 0 2px 3px 0px;
+width: 100%;
+height: 78px;
+padding: 5px;
     }
     .footer{
         width:100%;
         display:flex;
         background-color: #D9EBDD;
     }
-    h4{    font: bold 20px 'Arial';
+    h4{    font: bold 20px 'Kozuka Gothic Pro H';
     color: #2b2a29;
     line-height: 19px;
     margin:10px;}
     .inputButton{
-    font: bold 21px 'Arial';
+    font: bold 21px 'Helvetica';
     background-color: #18a258;
     border-style: solid;
     border-color: #2b2a29;
@@ -80,16 +88,16 @@ display: flex;
     padding: 7px 15px;
 }
 .inputButton:hover{background-color: #1a834b;}
-form{margin-top: 15px;}
+form{margin-top: 15px;margin-bottom:50px;}
  .inputLabel{
-    font: 24px 'Arial';
+    font: 24px 'Helvetica';
     color: #2b2a29;
     line-height: 27px;
  }   
  .section{padding:25px;}
  .sectionA{background-color:#D9EBDD;padding:20px;}
  .footBox a,.footBox span{
-    font: 16px 'Arial';
+    font: 16px 'Helvetica';
     text-decoration: none;
     color: #2b2a29;
     line-height: 30px;
@@ -99,7 +107,7 @@ form{margin-top: 15px;}
      padding: 30px;
      width: 100%;}
      .banner{background:url("img/home/g1.png")}
-     .header li, .contact a{font: bold 14px 'Arial';
+     .header li, .contact a{font: bold 14px 'Helvetica';
     color: #2b2a29;
     line-height: 16px;
     list-style:none;
@@ -126,10 +134,10 @@ margin:10px;}
     padding: 20px;}
 .contact span{line-height: 50px;}
 .wideBox{display: flex;}
-.psmall{font: 13px 'Arial';
+.psmall{font: 13px 'Helvetica';
     color: #2b2a29;
     line-height: 20px;}
-    p{    font: 16px 'Arial';
+    p{    font: 16px 'Helvetica';
     color: #2b2a29;
     line-height: 18px;}
     .sliderRight{float:right;}
@@ -163,7 +171,7 @@ margin:10px;}
   padding: 0px 10px;
   text-align: right;
   display: inline;
-  font: bold 34px 'Arial';
+  font: bold 34px 'Helvetica';
     color: #06745e;
     line-height: 40px;
 }
@@ -183,7 +191,7 @@ margin:10px;}
 .text30l{width:29%;}
 .text70r{width:69%;}
 .sliderRight p{text-align:justify;}
-.slogan2{display:flex;margin:20px;}
+.slogan2{display:flex;margin:20px;padding:20px;}
 .showbox{display:block;}
 .freequote img{    margin: 36px;
     width: 45%;}    
@@ -221,6 +229,12 @@ padding: 5px;border:black 1px solid;}
 .nav ul{top: 33px;
 border-radius: 5px;top: 33px;
 border-radius: 5px;}
+table tr td img{height:270px;}
+table td{padding-right:15px;padding-top:15px;}
+table{margin:40px auto;}
+table tr td span{background-color:#1a834b;color:#fff;display:block;padding:7px;}
+table tr td p{font-size:16px;text-align:justify;}
+p{font:quicksand;}
 </style>
 
 
@@ -271,7 +285,7 @@ border-radius: 5px;}
                 <br>
                 <input class="inputButton" type="submit" value="Submit">
             </form>
-            <img src="" alt="">
+            <img src="img/home/1.svg" style="width: 270px;position: absolute;top: 188px;left: 39.7%;">
         </div>
     </div>
 </div>
@@ -281,7 +295,9 @@ border-radius: 5px;}
             <div class="text70r">
             <h4>RESIDENTIAL, COMMERCIAL CLEANING, PEST CONTROL AND DISINFECTION SERVICES</h4>
             <p>Don't stress about your property cleaning: Our environmentally friendly products provide a safe clean. We take care of your home and ofﬁces with the same care as if it were our own. We leave your sanctuary spotless so that you can focus on the rest of your life.</p>
-        </div></div>
+        </div>
+        </div>
+        
         <div id="wrapper">
             <div class="line"></div>
             <div class="textbox">
@@ -290,33 +306,57 @@ border-radius: 5px;}
           </div>
         <div class="wideBox">
         <div class="boxes">
-            <div class="boxLogo">
+            <div class="boxLogo" id="logo1">
                 <span>DEEP CLEAN SERVICES</span>
             </div>
             <p class="psmall">If you have your day to day cleaning under control, let us do the realy dirty work. We provide deep clean sevices to reach the places you might have missed. We have a variety of bonus services from oven cleaning to air ducts. Let us help you make your home and offices shine!</p>
         </div>
         <div class="boxes">
-            <div class="boxLogo">
+            <div class="boxLogo" id="logo2">
                 <span>PEST CONTROL AND EXTERMINATION</span>
             </div>
             <p class="psmall">As the top pest control service company we have the experience and knowledge to support you with any pPest Problems you may have. We are a high quality and professional group of pest control technicians and experts offering a quality assurance pest control program. Since pest controls</p>
         </div>
         <div class="boxes">
-            <div class="boxLogo">
+            <div class="boxLogo" id="logo3">
                 <span>COVID-19<br> DISINFECTION SERVICES</span>
             </div>
             <p class="psmall">We all use various disinfecting products from our local store but these are laced with alcohol and bleach. Our products in our equipment and household disinfectants have no alcohol and no bleach. In fact, they are completely non-toxic and organic.<br> They are safe for plants, marine life,</p>
         </div>
         <div class="boxes">
-            <div class="boxLogo">
+            <div class="boxLogo" id="logo4">
                 <span>CLEAN = SAFE</span>   
             </div>
             <p class="psmall">We are using up to date health agency guidelines to be sure that our procedures limit the spread of disease. These procedures include using EPA-approved cleaning agents to disinfect all high-touch areas and safety measures for all employees. As always, cleanliness and safety remain</p>
         </div>
     </div>
+    <div id="wrapper">
+            <div class="line"></div>
+            <div class="textbox">
+              <div class="text">GO Klean Offerings</div>
+            </div>
+          </div>
+          <table>
+          <tr>
+          <td><img src="img/home/2.png"></td>
+          <td colspan="2"><img src="img/home/1.png"></td>
+          <td><img src="img/home/3.png"></td>
+          </tr>
+          <tr>
+          <td><span>360deg COMPREHENSIVE CLEANING<span></td>
+          <td colspan="2"><span>ELIMINATE <br>WASTE WATER RUNOFF</span></td>
+          <td><span>CAR WASH <br>MOBILE SERVICE</span></td>
+          </tr>
+          <tr>
+          <td style="padding-top:0px;"><p>Wet & Dry steam guarantee 360deg comprehensive cleaning. 16 bar steam pressure guarantee cleaning effects without any shampoo.</p></td>
+          <td colspan="2" style="padding-top:0px;"><p>Untreated wastewater disposalto ground soil and storm drains impacts the environment. But using our GOKLEAN steam car wash machin, you can avoid producing waster-water. It eliminates the need for a wasterwater reclmation mat and containment system, which decreases wash time per car and increases your earning potential.</p></td>
+          <td style="padding-top:0px;"><p>Door to door car wash refers to a car wash method that uses a mobile and convenient non-sludge car was equipment.</p></td>
+          </tr>
+          </table>
     <div class="freequote"><img src="img/home/g2.png" alt=""></div>
 </div>
 </div>
+
 <div class="section contact">
     <h3>CONTACT US</h3>
     <br>
@@ -335,7 +375,7 @@ border-radius: 5px;}
     <p>A member of ALTITUDE GROUPE PVT LTD.</p>
 </div>
 
-<div class="section footer">
+<div class="footer">
     <div class="footBox">
         <a href=""><b>Help Centre</b></a><br>
         <a href="">Privacy Policy</a><br>
